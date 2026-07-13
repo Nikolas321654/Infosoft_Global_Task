@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Breeders.API", "Breeders.API\Breeders.API.csproj", "{EB9137F2-BEA0-4F65-B197-5F345ACF92C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Breeders.Aplication", "Breeders.Aplication\Breeders.Aplication.csproj", "{FF359ED1-F9B8-4DFA-B523-EF775552E8CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Breeders.Application", "Breeders.Application\Breeders.Application.csproj", "{FF359ED1-F9B8-4DFA-B523-EF775552E8CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Breeders.Domain", "Breeders.Domain\Breeders.Domain.csproj", "{5F984F9D-4078-4449-B031-0A722A347A59}"
 EndProject

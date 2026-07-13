@@ -1,10 +1,17 @@
+using Breeders.Application.Interfaces;
 using Breeders.Infrastructure;
-using Breeders.Infrastructure.Persistence;
+using Breeders.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddScoped<ILitterRepository, LitterRepository>();
+builder.Services.AddScoped<IBreederBenefitRepository, BreederBenefitRepository>();
+builder.Services.AddScoped<IAuditLogRepository, AuditLogRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<BreedersDbContext>(options =>
