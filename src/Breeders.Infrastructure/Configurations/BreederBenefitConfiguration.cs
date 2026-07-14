@@ -9,10 +9,10 @@ public class BreederBenefitConfiguration : IEntityTypeConfiguration<BreederBenef
     public void Configure(EntityTypeBuilder<BreederBenefit> builder)
     {
         builder.HasKey(x => x.BreederId);
-        
+
         builder.Property(x => x.FreeLimit)
             .IsRequired();
-            
+
         builder.Property(x => x.UsedCount)
             .IsRequired();
     }
